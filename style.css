@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:0;
+    text-decoration: none;
+}
+.button{
+    display:flex;
+    justify-content: center;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  100%)
+}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+ .btn-grad:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+}
+
+
+
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: #757F9A; 
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  
+    background: linear-gradient(to right, #D7DDE8, #757F9A);
+}
+.div-form{
+    width:500px;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    padding:50px;
+    border-radius: 90px 10px;
+}
+.div-form i {
+    width:100%;
+    text-align: center;
+    font-size:50px;
+    margin-bottom: 10px;   
+    color:#fff; 
+}
+.div-form h1 {
+    text-align: center;
+    margin-bottom:10px;
+    color:#fff;
+}
+.div-form label{
+    display:block;
+    margin-bottom: 20px;
+    color:#fff;
+}
+.div-form input {
+    width:100%;
+    border:1px solid #999;
+    border-radius: 5px;
+    padding:8px;
+    font-size: 14px;
+    border:0;
+    opacity:0.7;
+}
+.div-form input:focus{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.div-form input[type=submit]:hover{
+    background-color: rgb(198, 198, 198);
+    border:1px solid #000;
+}
+.footer, .footer a{
+    color:#fff;
+    text-align:center;  
+    margin-left: 5px;
+}
+.error{
+    font-size: 11px;
+    background-color:#ff00cc;
+    color:#fff;
+    padding:4px;
+    border-radius: 5px;
+}
+.msgSucessRegistration{
+    position:absolute;
+    width:300px;
+    height:30px;
+    line-height: 30px;
+    transform: translate(10%);
+    top:40px;
+    background-color: #05e31e;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    display:none;
+}
+@media only screen and (max-width: 600px){
+    .div-form{
+        width:400px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .div-form{
+        width:350px;
+    }
+    .msgSucessRegistration{
+        transform: translate(2%);
+    }
+}
